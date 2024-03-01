@@ -42,6 +42,8 @@ myChart
 | Method | Description | Default |
 | --- | --- | :--: |
 | <b>data</b>([<i>object</i>]) | Getter/setter for chart data (see below for syntax details). | |
+| <b>fontSize</b>([<i>number</i>]) | Getter/setter for the chart font size in px. | `14` |
+| <b>fontStrokeWidth</b>([<i>number</i>]) | Getter/setter for the chart font stroke width in px. | `3` |
 | <b>width</b>([<i>number</i>]) | Getter/setter for the chart width in px. | *&lt;window width&gt;* |
 | <b>height</b>([<i>number</i>]) | Getter/setter for the chart height in px. | *&lt;window height&gt;* |
 | <b>children</b>([<i>string</i> or <i>fn</i>]) | Getter/setter for a data node's children accessor, used to establish the hierarchical relationship between nodes. Supports either a <i>string</i> indicating the object's property name, or a `function(node)` which should return an array of nodes. | `children` |
