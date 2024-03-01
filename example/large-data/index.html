@@ -1,0 +1,46 @@
+<head>
+  <script src="//unpkg.com/d3"></script>
+
+  <!-- <script src="//unpkg.com/sunburst-chart"></script> -->
+  <script src="../../dist/sunburst-chart.js"></script>
+
+  <style>body { margin: 0 }</style>
+</head>
+<body>
+  <div id="chart"></div>
+
+  <script>
+    const CHILDREN_PROB_DECAY = 0.15; // per level
+    const MAX_CHILDREN = 20;
+    const MAX_VALUE = 100;
+
+    function genNode(name='root', probOfChildren=1) {
+      if (Math.random() < probOfChildren) {
+        return {
+          name,
+          children: [...Array(Math.round(Math.random() * MAX_CHILDREN))]
+            .map((_, i) => genNode(i, probOfChildren - CHILDREN_PROB_DECAY))
+        }
+      } else {
+        return {
+          name,
+          value: Math.round(Math.random() * MAX_VALUE)
+        }
+      }
+    }
+
+    const color = d3.scaleOrdinal(d3.schemePaired);
+
+    Sunburst()
+      .fontSize(14)
+      .fontStrokeWidth(2)
+      .data(genNode())
+      .color(d => color(d.name))
+      .minSliceAngle(.4)
+      .excludeRoot(true)
+      .maxLevels(6)
+      .showLabels(true)
+      .tooltipContent((d, node) => `Size: <i>${node.value}</i>`)
+    (document.getElementById('chart'));
+  </script>
+</body>

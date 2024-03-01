@@ -1,0 +1,45 @@
+.sunburst-viz .slice path {
+  cursor: pointer;
+}
+
+.sunburst-viz text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+  pointer-events: none;
+  fill: #555555;
+}
+
+.sunburst-viz .text-contour {
+  fill: none;
+  stroke: whitesmoke;
+  stroke-linejoin: 'round';
+}
+
+.sunburst-viz .main-arc {
+  stroke-width: 1px;
+  transition: opacity .4s;
+}
+
+.sunburst-viz .main-arc:hover {
+  opacity: 0.85;
+  transition: opacity .05s;
+}
+
+.sunburst-viz .hidden-arc {
+  fill: none;
+}
+
+.sunburst-viz .tooltip {
+  max-width: 320px;
+  white-space: nowrap;
+}
+
+.sunburst-viz .tooltip-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sunburst-viz {
+  position: relative;
+}
