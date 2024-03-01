@@ -1,10 +1,6 @@
 Sunburst Chart
 ==============
 
-[![NPM package][npm-img]][npm-url]
-[![Build Size][build-size-img]][build-size-url]
-[![NPM Downloads][npm-downloads-img]][npm-downloads-url]
-
 <p align="center">
      <a href="https://vasturiano.github.io/sunburst-chart/example/flare/"><img width="80%" src="https://vasturiano.github.io/sunburst-chart/example/flare/screenshot.png"></a>
 </p>
@@ -95,14 +91,3 @@ myChart
   ]
 }
 ```
-
-## Giving Back
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=L398E7PKP47E8&currency_code=USD&source=url) If this project has helped you and you'd like to contribute back, you can always [buy me a ☕](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=L398E7PKP47E8&currency_code=USD&source=url)!
-
-[npm-img]: https://img.shields.io/npm/v/sunburst-chart
-[npm-url]: https://npmjs.org/package/sunburst-chart
-[build-size-img]: https://img.shields.io/bundlephobia/minzip/sunburst-chart
-[build-size-url]: https://bundlephobia.com/result?p=sunburst-chart
-[npm-downloads-img]: https://img.shields.io/npm/dt/sunburst-chart
-[npm-downloads-url]: https://www.npmtrends.com/sunburst-chart
